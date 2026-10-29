@@ -1,0 +1,181 @@
+{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 20px 12px;
+  min-height: 100vh;
+  background: #fff3f7;
+  color: #654253;
+  font-family: 'Nunito', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.app {
+  width: 100%;
+  max-width: 390px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.tag {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #db7e9e;
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 27px;
+  margin: 3px 0;
+}
+
+.subtitle {
+  font-size: 11px;
+  color: #ad8b9b;
+}
+
+.score {
+  text-align: center;
+  background: white;
+  padding: 10px 14px;
+  border: 2px solid #f8d6e1;
+  border-radius: 17px;
+  box-shadow: 0 4px #f0d3df;
+  min-width: 90px;
+}
+
+.score small {
+  display: block;
+  font-size: 9px;
+}
+
+.score strong {
+  font-size: 24px;
+  color: #e7789d;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  padding: 12px;
+  border-radius: 13px;
+  margin-bottom: 12px;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.stats span {
+  font-size: 20px;
+}
+
+.arena {
+  position: relative;
+  border: 4px solid #edb6ca;
+  border-radius: 19px;
+  overflow: hidden;
+  background: #fffafd;
+  box-shadow: 0 6px #f0d6e0;
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  touch-action: none;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: #fff3f7e8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+}
+
+.overlay.hidden {
+  display: none;
+}
+
+.popup {
+  width: 100%;
+  text-align: center;
+  padding: 24px 16px;
+  border-radius: 23px;
+  background: white;
+  border: 2px solid #f8d6e1;
+  box-shadow: 0 6px #f0d3df;
+}
+
+.big {
+  font-size: 55px;
+}
+
+h2 {
+  margin: 5px 0;
+  font-size: 23px;
+}
+
+.popup p {
+  font-size: 13px;
+  color: #a88a98;
+  line-height: 1.6;
+}
+
+button {
+  font: inherit;
+  font-weight: 900;
+  border: 0;
+  border-radius: 13px;
+  padding: 13px 15px;
+  background: #e87fa2;
+  color: white;
+  box-shadow: 0 4px #ce6489;
+  cursor: pointer;
+}
+
+button:active {
+  transform: translateY(2px);
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.controls button {
+  flex: 1;
+}
+
+.controls .secondary {
+  background: white;
+  color: #d46e91;
+  border: 2px solid #f3d0dc;
+  box-shadow: 0 4px #edd5de;
+}
+
+.hint {
+  text-align: center;
+  color: #a88a98;
+  font-size: 12px;
+  margin: 18px 0 0;
+}
+
+footer {
+  text-align: center;
+  font-size: 10px;
+  color: #c3a0b1;
+  margin-top: 20px;
+}

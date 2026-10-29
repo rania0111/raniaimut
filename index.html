@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Melon Market 🍉</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app">
+    <header>
+      <div>
+        <div class="tag">FRUIT MERGE GAME</div>
+        <h1>Melon Market 🍉</h1>
+        <p class="subtitle">Drop it. Merge it. Grow a melon!</p>
+      </div>
+      <div class="score">
+        <small>YOUR SCORE</small>
+        <strong id="score">0</strong>
+      </div>
+    </header>
+
+    <section class="stats">
+      <div>NEXT FRUIT <span id="next">🍓</span></div>
+      <div>🏆 BEST <span id="best">0</span></div>
+    </section>
+
+    <div class="arena">
+      <canvas id="game" width="360" height="560"></canvas>
+      <div class="overlay" id="overlay">
+        <div class="popup">
+          <div class="big">🍉</div>
+          <h2 id="title">Ready to merge?</h2>
+          <p id="message">
+            Susun buah setinggi mungkin, gabungkan buah yang sama,
+            dan buat melon terbesar!
+          </p>
+          <button id="play">LET'S PLAY!</button>
+        </div>
+      </div>
+    </div>
+
+    <p class="hint">👆 Klik area wadah untuk menjatuhkan buah</p>
+
+    <div class="controls">
+      <button id="drop">🍓 DROP FRUIT</button>
+      <button class="secondary" id="restart">↻ Restart</button>
+    </div>
+
+    <footer>made with 🍓 and love</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
